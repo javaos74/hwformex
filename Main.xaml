@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1402,2267" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p2="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p5="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.IntelligentOCR.Actions.Models</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="520,2202" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p6:DocumentTaxonomy" Name="taxonomy" />
+      <Variable x:TypeArguments="x:String" Name="file" />
+      <Variable x:TypeArguments="x:String" Name="du_text" />
+      <Variable x:TypeArguments="p4:Document" Name="du_dom" />
+      <Variable x:TypeArguments="p3:ExtractionResult" Name="auto_extracted" />
+      <Variable x:TypeArguments="p:DocumentValidationActionData" Name="action_obj" />
+      <Variable x:TypeArguments="p:DocumentValidationActionData" Name="action_out" />
+      <Variable x:TypeArguments="p3:ExtractionResult" Name="valid_extracted" />
+      <Variable x:TypeArguments="x:String" Name="du_api_key" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="478,105" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[taxonomy]" />
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="DUApiKey" DisplayName="Get Asset" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="478,139" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[du_api_key]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[file]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">template\1143_001.pdf</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitize Document" DocumentObjectModel="[du_dom]" DocumentPath="[file]" DocumentText="[du_text]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="478,298" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+      <p:DigitizeDocument.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Argument1="{x:Reference __ReferenceID0}" Argument2="{x:Reference __ReferenceID1}">
+          <p1:UiPathDocumentOCR Output="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="testkey" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" Endpoint="https://qandaocr.azurewebsites.net/qanda" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Language="auto" Profile="None" Scale="1" Timeout="100000">
+            <p1:UiPathDocumentOCR.Image>
+              <InArgument x:TypeArguments="sd:Image">
+                <DelegateArgumentValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
+                  <DelegateInArgument x:TypeArguments="sd:Image" x:Name="__ReferenceID0" Name="Image" />
+                </DelegateArgumentValue>
+              </InArgument>
+            </p1:UiPathDocumentOCR.Image>
+            <p1:UiPathDocumentOCR.PredictionId>
+              <InArgument x:TypeArguments="x:String">
+                <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
+                  <DelegateInArgument x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="PredictionId" />
+                </DelegateArgumentValue>
+              </InArgument>
+            </p1:UiPathDocumentOCR.PredictionId>
+          </p1:UiPathDocumentOCR>
+        </ActivityFunc>
+      </p:DigitizeDocument.OCREngine>
+    </p:DigitizeDocument>
+    <p2:DataExtractionScope ClassificationResult="{x:Null}" DisplayName="Data Extraction Scope" DocumentObjectModel="[du_dom]" DocumentPath="[file]" DocumentText="[du_text]" DocumentTypeId="poc.regform.mobile" ExtractionResult="[auto_extracted]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="478,490" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI8b5c95b8f4224553a254741b3c048352&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;poc.regform.mobile&quot;:{&quot;FieldMappings&quot;:{&quot;poc.regform.mobile.shop-name&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.shop-name&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.seller-name&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.seller-name&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.seller-phone&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.seller-phone&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.shop-addr&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.shop-addr&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber-birth-date&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber-birth-date&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.payment-owner&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.payment-owner&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.payment-birth-date&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.payment-birth-date&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.payment-account&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.payment-account&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber-sido&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber-sido&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber-gugun&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber-gugun&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber-dong&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber-dong&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscribe-5g-confirm&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscribe-5g-confirm&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscribe-confirm&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscribe-confirm&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.buyer-name&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.buyer-name&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.account-owner&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.account-owner&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.shop-name-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.shop-name-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.seller-name-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.seller-name-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.shop-addr-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.shop-addr-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.seller-phone-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.seller-phone-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.subscriber-name-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.subscriber-name-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.unique-info-agree-1&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.unique-info-agree-1&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.pii-agree-2&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.pii-agree-2&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.p-location-agree-3&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.p-location-agree-3&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.p-thirdparty-agree-4&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.p-thirdparty-agree-4&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.p-credit-agree-5&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.p-credit-agree-5&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;poc.regform.mobile.p-entrust-agree-6&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;poc.regform.mobile.p-entrust-agree-6&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UI8b5c95b8f4224553a254741b3c048352&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI8b5c95b8f4224553a254741b3c048352&quot;:[]}}">
+      <p2:DataExtractionScope.Extractors>
+        <p2:FormExtractor SerializedSignatureFields="{x:Null}" ApiKey="[du_api_key]" DisplayName="Form Extractor" Endpoint="https://asone.myrobots.co.kr/du_/svc/formextractor" sap:VirtualizedContainerService.HintSize="234,163" sap2010:WorkflowViewState.IdRef="FormExtractor_1" MinOverlapPercentage="65" PersistenceId="UI8b5c95b8f4224553a254741b3c048352" SerializedSettings="{}{}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;poc.regform.mobile&quot;,&quot;FormId&quot;:&quot;1e46848d&quot;,&quot;FormName&quot;:&quot;mobile_reg&quot;,&quot;OriginalFileExtension&quot;:&quot;pdf&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,595.0,841.0],&quot;SkewAngle&quot;:-0.2,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;가입신청서모바일&quot;,&quot;Box&quot;:[8.8,23.47,181.91,32.54]},{&quot;Text&quot;:&quot;□모텔이려변로&quot;,&quot;Box&quot;:[53.35,23.47,40.28,8.8]},{&quot;Text&quot;:&quot;고객구분&quot;,&quot;Box&quot;:[58.15,277.4,18.4,6.4]},{&quot;Text&quot;:&quot;자영업구분&quot;,&quot;Box&quot;:[66.15,277.4,22.67,8.0]},{&quot;Text&quot;:&quot;업무구분&quot;,&quot;Box&quot;:[75.75,277.4,18.4,6.4]},{&quot;Text&quot;:&quot;단말기모멸명&quot;,&quot;Box&quot;:[105.09,29.87,38.94,8.8]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]},{&quot;Page&quot;:1,&quot;Size&quot;:[0.0,0.0,595.0,841.0],&quot;SkewAngle&quot;:0.0,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;개인정보&quot;,&quot;Box&quot;:[15.2,25.07,79.22,28.54]},{&quot;Text&quot;:&quot;및개인위치정보&quot;,&quot;Box&quot;:[11.2,98.69,144.57,36.54]},{&quot;Text&quot;:&quot;활용동의서&quot;,&quot;Box&quot;:[13.34,239.26,97.36,30.67]},{&quot;Text&quot;:&quot;재서형점했형&quot;,&quot;Box&quot;:[68.55,70.42,105.89,16.8]},{&quot;Text&quot;:&quot;가인장보수장&quot;,&quot;Box&quot;:[197.65,71.22,54.15,17.34]},{&quot;Text&quot;:&quot;이용동의&quot;,&quot;Box&quot;:[197.65,119.76,38.68,17.34]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]},{&quot;Page&quot;:2,&quot;Size&quot;:[0.0,0.0,595.0,841.0],&quot;SkewAngle&quot;:-0.2,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;개인정보&quot;,&quot;Box&quot;:[14.4,27.47,79.22,28.54]},{&quot;Text&quot;:&quot;몇개인위치정보&quot;,&quot;Box&quot;:[10.4,100.29,143.77,36.54]},{&quot;Text&quot;:&quot;활용동의서&quot;,&quot;Box&quot;:[15.2,242.46,97.09,27.74]},{&quot;Text&quot;:&quot;(2)&quot;,&quot;Box&quot;:[14.4,336.35,33.07,28.54]},{&quot;Text&quot;:&quot;LGUt&quot;,&quot;Box&quot;:[16.8,511.86,46.94,16.54]},{&quot;Text&quot;:&quot;본인은&quot;,&quot;Box&quot;:[771.65,55.48,25.61,14.14]},{&quot;Text&quot;:&quot;귀사가&quot;,&quot;Box&quot;:[773.52,80.02,24.27,11.2]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]},{&quot;Page&quot;:3,&quot;Size&quot;:[0.0,0.0,595.0,841.0],&quot;SkewAngle&quot;:-0.3,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;(3)&quot;,&quot;Box&quot;:[11.2,333.95,37.34,31.74]},{&quot;Text&quot;:&quot;5개2Q분형장E&quot;,&quot;Box&quot;:[65.08,58.95,77.89,18.67]},{&quot;Text&quot;:&quot;조회&quot;,&quot;Box&quot;:[320.34,174.71,16.8,12.54]},{&quot;Text&quot;:&quot;08해는겠방8래나다&quot;,&quot;Box&quot;:[320.34,197.38,84.02,13.34]},{&quot;Text&quot;:&quot;R2답대예R형의&quot;,&quot;Box&quot;:[344.88,55.75,97.09,18.4]},{&quot;Text&quot;:&quot;처리위타하는것에&quot;,&quot;Box&quot;:[394.23,173.91,58.15,11.2]}],&quot;Fields&quot;:[],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[{&quot;FieldId&quot;:&quot;poc.regform.mobile.shop-name&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-3.8478,11.6196,72.1465,8.7797],&quot;Target&quot;:{&quot;Text&quot;:&quot;만대점심소&quot;,&quot;Area&quot;:[242.99,28.27,19.47,8.8]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.seller-name&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-6.1564,6.5168,33.592,12.2153],&quot;Target&quot;:{&quot;Text&quot;:&quot;판때자&quot;,&quot;Area&quot;:[243.79,123.76,12.0,8.0]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.seller-phone&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-6.1564,9.3793,86.2704,12.2153],&quot;Target&quot;:{&quot;Text&quot;:&quot;먼학쳐&quot;,&quot;Area&quot;:[242.99,187.51,14.67,9.6]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.shop-addr&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-6.5382,12.2268,145.0565,13.7422],&quot;Target&quot;:{&quot;Text&quot;:&quot;만배점주소&quot;,&quot;Area&quot;:[244.59,292.6,18.67,6.4]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.subscriber&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-7.7322,22.8748,204.9877,17.9412],&quot;Target&quot;:{&quot;Text&quot;:&quot;갑럼잖력&quot;,&quot;Area&quot;:[348.08,53.35,33.07,23.21]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.subscriber-birth-date&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-8.8956,31.1601,196.5897,17.5595],&quot;Target&quot;:{&quot;Text&quot;:&quot;예답부u8)&quot;,&quot;Area&quot;:[349.68,302.47,44.28,20.81]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.payment-owner&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-9.6921,15.797,150.0189,20.2316],&quot;Target&quot;:{&quot;Text&quot;:&quot;영르줄&quot;,&quot;Area&quot;:[415.03,118.16,29.07,19.2]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.payment-birth-date&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-9.3386,22.7754,201.5522,19.8498],&quot;Target&quot;:{&quot;Text&quot;:&quot;했열부력-.3)&quot;,&quot;Area&quot;:[414.77,303.01,42.41,20.54]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.payment-account&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-9.7405,25.7698,240.8701,18.7047],&quot;Target&quot;:{&quot;Text&quot;:&quot;렸핵겠굽법쵸&quot;,&quot;Area&quot;:[434.24,117.36,45.08,21.34]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.subscriber-sido&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-9.2871,-110.525,99.6309,20.6133],&quot;Target&quot;:{&quot;Text&quot;:&quot;심&quot;,&quot;Area&quot;:[282.73,159.24,6.4,11.2]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.subscriber-gugun&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-10.7071,-112.2052,103.0665,21.3767],&quot;Target&quot;:{&quot;Text&quot;:&quot;최&quot;,&quot;Area&quot;:[300.34,156.84,12.27,20.81]},&quot;Anchors&quot;:[]}]},{&quot;FieldId&quot;:&quot;poc.regform.mobile.subscriber-dong&quot;,&quot;FieldDescriptors&quot;:[{&quot;PageIndexAtDesignTime&quot;:0,&quot;Offset&quot;:[-10.4319,-113.0235,103.4482,20.2316],&quot;Target&quot;:{&quot;Text&quot;:&quot;를&quot;,&quot;Area&quot;:[321.94,157.64,13.07,21.34]},&quot;Anchors&quot;:[]}]}]}}]" Timeout="100000">
+          <p2:FormExtractor.DocumentBounds>
+            <InArgument x:TypeArguments="p3:ResultsDocumentBounds">
+              <DelegateArgumentValue x:TypeArguments="p3:ResultsDocumentBounds">
+                <DelegateInArgument x:TypeArguments="p3:ResultsDocumentBounds" Name="DocumentBounds" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.DocumentBounds>
+          <p2:FormExtractor.DocumentObjectModel>
+            <InArgument x:TypeArguments="p4:Document">
+              <DelegateArgumentValue x:TypeArguments="p4:Document">
+                <DelegateInArgument x:TypeArguments="p4:Document" Name="DocumentObjectModel" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.DocumentObjectModel>
+          <p2:FormExtractor.DocumentPath>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.DocumentPath>
+          <p2:FormExtractor.DocumentText>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.DocumentText>
+          <p2:FormExtractor.ExtractorDocumentType>
+            <InArgument x:TypeArguments="p5:ExtractorDocumentType">
+              <DelegateArgumentValue x:TypeArguments="p5:ExtractorDocumentType">
+                <DelegateInArgument x:TypeArguments="p5:ExtractorDocumentType" Name="ExtractorDocumentType" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.ExtractorDocumentType>
+          <p2:FormExtractor.ExtractorResult>
+            <OutArgument x:TypeArguments="p5:ExtractorResult">
+              <DelegateArgumentReference x:TypeArguments="p5:ExtractorResult">
+                <DelegateOutArgument x:TypeArguments="p5:ExtractorResult" Name="ExtractorResult" />
+              </DelegateArgumentReference>
+            </OutArgument>
+          </p2:FormExtractor.ExtractorResult>
+          <p2:FormExtractor.PredictionId>
+            <InArgument x:TypeArguments="x:String">
+              <DelegateArgumentValue x:TypeArguments="x:String">
+                <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+              </DelegateArgumentValue>
+            </InArgument>
+          </p2:FormExtractor.PredictionId>
+        </p2:FormExtractor>
+      </p2:DataExtractionScope.Extractors>
+    </p2:DataExtractionScope>
+    <p:CreateDocumentValidationAction TimeoutMs="{x:Null}" ActionCatalog="[&quot;regform&quot;]" ActionOutput="[action_obj]" ActionPriority="Medium" ActionTitle="Mobile Regcorm" AutomaticExtractionResults="[auto_extracted]" BucketFolderPath="poc" BucketName="mybucket" DisplayName="Create Document Validation Action" DocumentObjectModel="[du_dom]" DocumentPath="[file]" DocumentText="[du_text]" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="478,373" sap2010:WorkflowViewState.IdRef="CreateDocumentValidationAction_1" ShowOnlyRelevantPageRange="False" Taxonomy="[taxonomy]" />
+    <p:WaitForDocumentValidationActionAndResume StatusMessage="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" ActionInput="[action_obj]" ActionOutput="[action_out]" AutomaticExtractionResults="[auto_extracted]" DisplayName="Wait For Document Validation Action And Resume" DocumentObjectModel="[du_dom]" DocumentPath="[file]" DocumentText="[du_text]" DownloadFolderPath="C:\Temp" sap:VirtualizedContainerService.HintSize="478,365" sap2010:WorkflowViewState.IdRef="WaitForDocumentValidationActionAndResume_1" RemoveDataFromStorage="True" Taxonomy="[taxonomy]" ValidatedExtractionResults="[valid_extracted]" />
+  </Sequence>
+</Activity>
