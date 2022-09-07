@@ -3,12 +3,14 @@
   "description": "LGUPLUS 가입 신청서 ",
   "main": "Main.xaml",
   "dependencies": {
+    "Newtonsoft.Json": "[13.0.1]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.IntelligentOCR.Activities": "[6.4.0-preview]",
     "UiPath.Mail.Activities": "[1.15.2]",
     "UiPath.Persistence.Activities": "[1.4.1]",
     "UiPath.System.Activities": "[22.4.1]",
-    "UiPath.UIAutomation.Activities": "[22.4.5]"
+    "UiPath.UIAutomation.Activities": "[22.4.5]",
+    "UiPath.WebAPI.Activities": "[1.11.2]"
   },
   "webServices": [],
   "entitiesStores": [],

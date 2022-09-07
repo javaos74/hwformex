@@ -526,6 +526,114 @@
           ]
         }
       ]
+    },
+    {
+      "DocumentTypeId": "poc.lguplus.test",
+      "Group": "poc",
+      "Category": "lguplus",
+      "Name": "test",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "poc.lguplus.test.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "poc.lguplus.test.name",
+          "FieldName": "name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ]
+        },
+        {
+          "FieldId": "poc.lguplus.test.birth-date",
+          "FieldName": "birth-date",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ]
+        },
+        {
+          "FieldId": "poc.lguplus.test.account-no",
+          "FieldName": "account-no",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ]
+        },
+        {
+          "FieldId": "poc.lguplus.test.addr",
+          "FieldName": "addr",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ]
+        },
+        {
+          "FieldId": "poc.lguplus.test.bank-name",
+          "FieldName": "bank-name",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fcd98f"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "k"
+            }
+          ]
+        }
+      ]
     }
   ],
   "Groups": [
